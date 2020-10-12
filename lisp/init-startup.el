@@ -4,9 +4,11 @@
 ;; 最大化窗口
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 ;; 关闭工具栏
-(tool-bar-mode -1)
+(when *is-macos* *is-windows*
+  (tool-bar-mode -1))
 ;; 关闭滚动条
-(scroll-bar-mode -1)
+(when *is-macos* *is-windows*
+  (scroll-bar-mode -1))
 ;; 开启行号显示
 ;; (global-linum-mode 1)
 (global-display-line-numbers-mode t)
