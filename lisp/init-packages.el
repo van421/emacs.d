@@ -73,5 +73,8 @@
 
 (use-package lsp-mode)
 
+(use-package popwin
+  :hook (after-init . popwin-mode))
+
 (provide 'init-packages)
 ;;; init-packages.el ends here
