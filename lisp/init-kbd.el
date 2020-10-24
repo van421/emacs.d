@@ -50,5 +50,8 @@
 ;;; ace-window 包的功能快捷键设置
 (global-set-key (kbd "M-o") 'ace-window)
 
+;;; 设置 org-agenda 打开快捷键
+(global-set-key (kbd "C-c a") 'org-agenda)
+
 (provide 'init-kbd)
 ;;; init-kbd.el ends here
