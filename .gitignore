@@ -4,3 +4,4 @@ recentf
 elpa/
 *~
 .cache/
+.emacs.desktop*
