@@ -39,5 +39,7 @@
   (find-file "~/.emacs.d/init.el"))
 ;; 启动时还原上一次退出前的状态
 (desktop-save-mode 1)
+;; 当选中一段文字 之后输入一个字符会替换掉你选中部分的文字
+(delete-selection-mode 1)
 (provide 'init-startup)
 ;;; init-startup.el ends here
