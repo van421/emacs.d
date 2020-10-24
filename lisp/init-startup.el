@@ -41,5 +41,8 @@
 (desktop-save-mode 1)
 ;; 当选中一段文字 之后输入一个字符会替换掉你选中部分的文字
 (delete-selection-mode 1)
+;; 自动加载外部修改过的文件
+(global-auto-revert-mode 1)
+
 (provide 'init-startup)
 ;;; init-startup.el ends here
