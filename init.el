@@ -12,6 +12,7 @@
 (require 'init-ui)
 (require 'init-packages)
 (require 'init-kbd)
+(require 'init-org)
 
 (when (file-exists-p custom-file)
   (load-file custom-file))
