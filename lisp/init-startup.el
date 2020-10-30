@@ -31,6 +31,8 @@
 (setq gc-cons-threshold most-positive-fixnum)
 ;; 关闭启动帮助页面
 (setq inhibit-startup-screen t)
+;; 设置启动画面为 start.org 文件
+(setq-default initial-buffer-choice "~/Library/Mobile Documents/com~apple~CloudDocs/Notes/start.org")
 ;; 关闭自动生成备份文件设置
 (setq make-backup-files nil)
 ;; 定义打开 init 文件函数
@@ -38,7 +40,7 @@
   (interactive)
   (find-file "~/.emacs.d/init.el"))
 ;; 启动时还原上一次退出前的状态
-(desktop-save-mode 1)
+;;(desktop-save-mode 1)
 ;; 当选中一段文字 之后输入一个字符会替换掉你选中部分的文字
 (delete-selection-mode 1)
 ;; 自动加载外部修改过的文件
